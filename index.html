@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milano Running Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="runner.png" type="image/x-icon">
+</head>
+<body>
+    <div id="loading-screen"> 
+        <img src="runner.png" alt="logo" style="height: 100px; width: 100px;">
+        <strong>Loading...</strong> 
+    </div>    
+
+    <header>
+        <h1>Milano Running Event</h1>
+        <p>Experience the thrill of running through the iconic streets of Milan!</p>
+    </header>
+
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="info">
+            <h2>About the Event</h2>
+            <p>The Milano Running Event is a celebration of fitness and community, taking place on May 5th, 2024. Whether you're a seasoned runner or a beginner, this is your chance to shine!</p>
+        </section>
+
+        <section id="schedule" class="info">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li><strong>8:00 AM:</strong> Warm-up Session</li>
+                <li><strong>9:00 AM:</strong> 5K Run</li>
+                <li><strong>10:00 AM:</strong> Awards Ceremony</li>
+            </ul>
+        </section>
+
+        <section id="register" class="info">
+            <h2>Register Now</h2>
+            <button>Sign Up</button>
+        </section>
+
+        <section id="contact" class="info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, reach out to us at <a href="mailto:info@milanoevent.com">info@milanoevent.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="section">
+            <h3>About Us</h3>
+            <p>Your go-to platform for all things running in Milan!</p>
+        </div>
+        <div class="section">
+            <h3>Quick Links</h3>
+            <a href="#about">About</a><br>
+            <a href="#schedule">Schedule</a><br>
+            <a href="#register">Register</a><br>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="section">
+            <h3>Follow Us</h3>
+            <a href="https://giospezia.it">GioSpezia</a><br>
+            <a href="https://www.instagram.com/giospezia06/">Instagram</a><br>
+            <a href="https://paypal.me/GioSpezia">Donazione</a>
+        </div>
+        <div class="section">
+            <p>&copy; 2024 Milano Running Event. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const loadingScreen = document.getElementById('loading-screen');
+        const body = document.body;
+
+        window.onload = () => {
+            setTimeout(() => document.getElementById('loading-screen').style.display = 'none', 1500);
+        };
+
+        function toggleTheme() {
+            body.classList.toggle('dark-mode');
+            document.querySelectorAll('.info').forEach(info => info.classList.toggle('dark-mode'));
+            document.getElementById('navbar').classList.toggle('dark-mode');
+            document.querySelector('footer').classList.toggle('dark-mode');
+            document.querySelectorAll('footer h3, footer a').forEach(element => {
+                if (body.classList.contains('dark-mode')) {
+                    element.style.color = '#ff9a9e';
+                } else {
+                    element.style.color = '';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
