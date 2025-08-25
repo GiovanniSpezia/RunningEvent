@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Milano Running Event: vivi l'emozione della corsa nel cuore di Milano. Un evento imperdibile per gli appassionati di running.">
+        <title>Milano Running Event</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="img/runner.png" type="image/x-icon">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- JS -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar" aria-label="Main Navigation">
+        <div class="logo">
+            <a href="#header">Milano Running</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        </nav>
+
+        <!-- Header -->
+        <header id="header">
+            <div class="overlay"></div>
+            <div class="header-content">
+            <h1>Milano Running Event</h1>
+            <p>Experience the excitement of running through the streets of Milan!</p>
+            <button onclick="location.href='#signup'">Sign Up Now</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                <h2>Discover the Milan Run</h2>
+                <p>Get ready to lace up and hit the streets of Milan for a dynamic day of sport, music, and community! Whether you're chasing a personal best or just soaking in the vibes, this event welcomes runners of all levels.</p>
+                <ul class="about-features">
+                    <li><span>🏃‍♂️</span> Choose between 10K or 5K scenic routes</li>
+                    <li><span>🎶</span> Live music and entertainment zones</li>
+                    <li><span>🏅</span> Finisher medals for every participant</li>
+                    <li><span>💧</span> Hydration & energy stations along the way</li>
+                </ul>
+                <button class="cta-button" onclick="location.href='#signup'">Secure Your Spot</button>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="img/training.png" alt="Runners training for the Milan event">
+                        <div class="pink-glow"></div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Schedule Section -->
+            <section id="schedule">
+            <h2>📅 Event Schedule</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                <div class="timeline-icon">⏰</div>
+                <div class="timeline-content">
+                    <h3>07:00 AM – Check-in & Warm-up</h3>
+                    <p>Start your day with energy! Pick up your race kit and join our trainers for a guided warm-up session.</p>
+                </div>
+                </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🚀</div>
+                <div class="timeline-content">
+                    <h3>08:00 AM – Race Start</h3>
+                    <p>And we’re off! Dash through Milan’s iconic streets and enjoy the vibrant atmosphere along the route.</p>
+                </div>
+                </div>
+                <div class="timeline-item">
+                <div class="timeline-icon">🏁</div>
+                <div class="timeline-content">
+                    <h3>10:00 AM – Finish Line Celebration</h3>
+                    <p>Celebrate your achievement with live music, delicious food, and a festive awards ceremony.</p>
+                </div>
+                </div>
+            </div>
+            </section> 
+
+            <!-- Gallery Section -->
+            <section id="gallery">
+            <h2>📸 Event Highlights</h2>
+            <p class="gallery-intro">Relive the energy, emotion, and unforgettable moments from the Milan Run. From the first step to the final celebration, every photo tells a story.</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img/marathon.png" alt="Runners in motion">
+                    <div class="gallery-overlay">
+                        <p>🏃‍♂️ Full speed ahead – runners giving it their all</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/start-line.png" alt="Start Line excitement">
+                    <div class="gallery-overlay">
+                        <p>🚀 The adrenaline rush at the starting line</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/finish.png" alt="Finish Line moment">
+                    <div class="gallery-overlay">
+                        <p>🏁 Victory and emotion at the finish</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/cheering.png" alt="Crowd cheering">
+                    <div class="gallery-overlay">
+                        <p>🎉 Cheers, chants, and contagious enthusiasm</p>
+                    </div>
+                </div>
+            </div>
+            </section>  
+
+            <!-- Testimonials Section -->
+            <section id="testimonials">
+            <h2>💬 What Our Runners Say</h2>
+            <p class="testimonial-intro">Real voices, real emotions. Discover why the Milan Run leaves a lasting impression on every participant.</p>
+
+            <div class="testimonial-container">
+                <div class="testimonial-slide active">
+                <img src="img/avatar-luca.png" alt="Luca R." class="testimonial-avatar">
+                <p>“An unforgettable experience! The race was well-organized, and the atmosphere was incredible. I met amazing people and felt truly part of something special.”</p>
+                <h4>- Luca R., 10K Finisher</h4>
+                </div>
+                <div class="testimonial-slide">
+                <img src="img/avatar-martina.png" alt="Martina S." class="testimonial-avatar">
+                <p>“The best running event I've ever participated in! From the scenic route to the cheering crowd, everything was perfect. Can't wait for next year!”</p>
+                <h4>- Martina S., First-Time Runner</h4>
+                </div>
+                <div class="testimonial-slide">
+                <img src="img/avatar-davide.png" alt="Davide M." class="testimonial-avatar">
+                <p>“Loved the route, the support, and the energy of the crowd. The hydration stations were spot-on and the medal ceremony was emotional. A must-attend event!”</p>
+                <h4>- Davide M., Veteran Athlete</h4>
+                </div>
+            </div>
+
+            <div class="testimonial-buttons">
+                <button id="prevBtn" class="arrow-btn">❮</button>
+                <button id="nextBtn" class="arrow-btn">❯</button>
+            </div>
+            </section>
+
+        <!-- FAQ Section -->
+            <section id="faq">
+                <h2>🌟 Your Questions, Answered</h2>
+                <p class="faq-intro">Everything you need to feel confident and prepared for race day.</p>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>📍 Where is the event held?</span>
+                        <span class="arrow">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The race winds through Milan’s historic heart—Duomo, Sforza Castle, and Parco Sempione included.</p>
+                    </div>
+                    </div>
+
+                    <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>📝 How do I register?</span>
+                        <span class="arrow">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click “Sign Up Now” at the top. It’s quick, easy, and takes less than 2 minutes.</p>
+                    </div>
+                    </div>
+
+                    <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>🎒 What should I bring?</span>
+                        <span class="arrow">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Comfortable gear, a refillable bottle, and your best energy. We’ll provide race kits at check-in.</p>
+                    </div>
+                    </div>
+
+                    <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>🚿 Are there changing areas?</span>
+                        <span class="arrow">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes—secure changing zones and bag drop stations are available near the start line.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>   
+
+            <!-- Sign Up Section -->
+            <section id="signup">
+            <div class="signup-container">
+                <h2>🎟️ Join the Run</h2>
+                <p class="signup-intro">Secure your spot and be part of Milan’s most energetic running event. It takes less than a minute!</p>
+
+                <form id="signup-form" action="#" method="post">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="👤 Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="📧 Your Email" required>
+                </div>
+                <button type="submit">Register Now</button>
+                </form>
+            </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+        <div class="footer-container">
+            <p class="footer-brand">&copy; 2024 Milano Running Event</p>
+
+            <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <p class="footer-note">Made with ❤️ by <a class="a-link" href="https://giospezia.it" target="_blank">Giovanni Spezia</a></p>
+        </div>
+        </footer>
+        
+    </body>
+</html>
